@@ -109,7 +109,7 @@ Move off default blue so the icon stops reading as a generic fintech tile.
 Applied to the icon: see "Icon (chosen)" above. Green and off-white swap roles between the
 light and dark appearances; amber is the only accent on the mark.
 
-Contrast: green on off-white is about 7.6:1, passes AA for text and AAA for large text.
+Contrast: green on off-white is about 7.3:1, passes AA for text and AAA for large text.
 
 ### Typography
 - **Wordmark:** SF Pro Rounded Semibold, lowercase "pryvo", tracking -1.5% of the point size
