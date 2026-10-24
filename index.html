@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pryvo Brand</title>
+<meta name="description" content="Pryvo brand guidelines: the receipt mark, wordmark, lockup, palette and type for the small business toolkit.">
+<link rel="icon" href="brand/svg/icon-light.svg">
+<style>
+  :root { --bg:#F6F1E7; --fg:#172019; --muted:#5E6B62; --ink:#0E5A3A; --accent:#E8A33D; --card:#FFFDF8; --line:#E3DCCB; --night:#101512; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#101512; --fg:#EDE8DC; --muted:#A3AB9F; --ink:#8FD3B0; --card:#181F1A; --line:#2A332C; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif; line-height:1.55; }
+  .wrap { max-width:900px; margin:0 auto; padding:48px 16px 72px; }
+  h1,h2,h3 { font-family:-apple-system,"SF Pro Rounded","SF Pro Display",sans-serif; letter-spacing:-0.01em; margin:0 0 8px; }
+  h1 { font-size:clamp(28px,5vw,40px); color:var(--ink); }
+  h2 { font-size:24px; margin-top:48px; }
+  h3 { font-size:17px; margin-top:24px; }
+  p { max-width:62ch; margin:8px 0; }
+  .muted { color:var(--muted); }
+  .hero img { width:100%; max-width:760px; display:block; border-radius:14px; }
+  .pair { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .pair img { width:100%; display:block; border-radius:14px; border:1px solid var(--line); }
+  .icons { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+  .icons figure { margin:0; text-align:center; }
+  .icons img { width:100%; max-width:220px; border-radius:22.37%; display:block; margin:0 auto; }
+  .icons .dark { background:var(--night); } .icons .tint { background:#1C1C1E; }
+  figcaption { font-size:13px; color:var(--muted); margin-top:6px; }
+  .swatches { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; }
+  .swatch { border-radius:12px; padding:14px; border:1px solid var(--line); }
+  .swatch b { display:block; } .swatch code { font-size:13px; }
+  ul { padding-left:20px; } li { margin:4px 0; }
+  a { color:var(--ink); }
+  .dl a { display:inline-block; margin:4px 10px 4px 0; }
+  @media (max-width:560px) { .pair, .icons { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <img src="brand/png/lockup-horizontal.png" alt="Pryvo lockup: receipt mark, wordmark and the tagline bar">
+    <h1>Pryvo</h1>
+    <p class="muted">The small business toolkit. Pricing, invoices and bookkeeping for solo service businesses, on iOS.</p>
+  </header>
+
+  <h2>Mark</h2>
+  <p>A green receipt card on warm off-white, torn along the bottom, with the P reversed out and a single amber total line under it. The line is the tagline, cut out of the bar in the card colour: a bar at icon size, readable up close.</p>
+  <div class="icons">
+    <figure><img src="brand/svg/icon-light.svg" alt="Icon, light"><figcaption>Light</figcaption></figure>
+    <figure><img class="dark" src="brand/svg/icon-dark.svg" alt="Icon, dark"><figcaption>Dark</figcaption></figure>
+    <figure><img class="tint" src="brand/svg/icon-tinted.svg" alt="Icon, tinted"><figcaption>Tinted</figcaption></figure>
+  </div>
+
+  <h2>Lockup</h2>
+  <p>Wordmark in SF Pro Rounded Semibold, lowercase, tracked tight. The tagline is the icon's bar scaled under "ryvo", with the words cut out so the page shows through. Beneath the p's tail sits a foot block whose cradle is the tail's own end mirrored.</p>
+  <div class="pair">
+    <img src="brand/png/lockup-horizontal.png" alt="Lockup on cream">
+    <img src="brand/png/lockup-dark.png" alt="Lockup on night">
+  </div>
+  <h3>Rules</h3>
+  <ul>
+    <li>Clear space of one mark-height on every side.</li>
+    <li>Minimum size: icon 24 px, wordmark 100 px wide.</li>
+    <li>Never stretch, outline, add a drop shadow, or set the mark on a photo.</li>
+    <li>The bar is always amber and always carries the tagline. Nothing else goes on the card.</li>
+  </ul>
+
+  <h2>Palette</h2>
+  <div class="swatches">
+    <div class="swatch" style="background:#0E5A3A;color:#F6F1E7"><b>Ink</b><code>#0E5A3A</code></div>
+    <div class="swatch" style="background:#F6F1E7;color:#172019"><b>Paper</b><code>#F6F1E7</code></div>
+    <div class="swatch" style="background:#E8A33D;color:#1A1206"><b>Accent</b><code>#E8A33D</code></div>
+    <div class="swatch" style="background:#101512;color:#EDE8DC"><b>Night</b><code>#101512</code></div>
+  </div>
+  <p class="muted">Ink on paper is about 7.6:1, passing AA for text and AAA for large text. Amber is the one accent on the mark.</p>
+
+  <h2>Type</h2>
+  <p>Wordmark: SF Pro Rounded Semibold. Tagline on the mark: SF Pro Rounded Black capitals, tracked tight. In the app: SF Pro at Dynamic Type sizes, tabular figures wherever a number appears.</p>
+
+  <h2>Downloads</h2>
+  <p class="dl">
+    <a href="brand/svg/icon-light.svg">Icon light (SVG)</a>
+    <a href="brand/svg/icon-dark.svg">Icon dark (SVG)</a>
+    <a href="brand/svg/icon-tinted.svg">Icon tinted (SVG)</a>
+    <a href="brand/svg/mark.svg">Mark (SVG)</a>
+    <a href="brand/png/lockup-horizontal.png">Lockup light (PNG)</a>
+    <a href="brand/png/lockup-dark.png">Lockup dark (PNG)</a>
+    <a href="brand/png/wordmark-transparent.png">Wordmark (PNG)</a>
+    <a href="brand-brief.md">Brand brief (Markdown)</a>
+  </p>
+  <p class="muted">Everything here is generated by <code>brand/build-icon.py</code> from one set of constants, so the icon, lockups and this page cannot drift apart.</p>
+</div>
+</body>
+</html>
