@@ -127,11 +127,12 @@ Contrast: green on off-white is about 7.3:1, passes AA for text and AAA for larg
   sits a little below the y's tail. The words sit at the bar's right end, letterspaced a little
   wider than on the icon. The p itself is never altered: beneath its tail sits a foot block of
   the stem's width in the ink colour, from the bar's bottom edge up to a cradle that is the
-  negative of the tail's end (the p's own outline, shifted down by a small gap), its tips
-  rounded off, its bottom corners the bar's, so the p reads as reaching down to the bar. The
-  build refuses a foot with no block left below its cradle. The foot belongs to the lockup only;
-  the wordmark on its own has none. `build-icon.py` hands the bar geometry to
-  `render-lockups.swift`, which derives the layout from the glyph outlines.
+  negative of the tail's end (the p's own outline, shifted down by a small gap; a quarter wider
+  on the dark lockups, since light shapes on a dark ground read larger), its tips rounded off,
+  its bottom corners the bar's, so the p reads as reaching down to the bar. The build refuses a
+  foot with no block left below its cradle. The foot belongs to the lockup only; the wordmark on
+  its own has none. `build-icon.py` hands the bar geometry to `render-lockups.swift`, which
+  derives the layout from the glyph outlines.
 - Clear space: one mark-height on every side.
 - Minimum: icon 24 px, wordmark 100 px wide.
 - Never stretch, outline, add drop shadow, or put the mark on a photo.
@@ -144,6 +145,10 @@ Contrast: green on off-white is about 7.3:1, passes AA for text and AAA for larg
   a review sheet to `docs/brand/png/`; then runs `render-lockups.swift` with the palette,
   tagline and line geometry for the lockups and wordmark.
 - Previous icon (v1 ledger-line P) archived at `docs/brand/archive/v1-ledger-line/`.
+- Brand page: `docs/index.html`, published as the public repo `samuelfalade/pryvo-brand`
+  (GitHub Pages from its root, https://samuelfalade.github.io/pryvo-brand/) because this repo is
+  private. To republish, copy `docs/index.html`, `docs/brand/png`, `docs/brand/svg` and this
+  brief into that repo. Linked from samuelfalade.github.io as a project card.
 - Icon concepts under evaluation: `docs/brand/concepts/` (generator `build-concepts.py`,
   SVG sources in `svg/`, PNG sheet `png/developed-sheet.png`). Five candidates: Coin, Tag,
   Receipt, Ledger, Angular, each in light/dark/tinted. Receipt was chosen on 2026-10-21; the
