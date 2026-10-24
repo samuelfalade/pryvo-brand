@@ -145,10 +145,16 @@ Contrast: green on off-white is about 7.3:1, passes AA for text and AAA for larg
   a review sheet to `docs/brand/png/`; then runs `render-lockups.swift` with the palette,
   tagline and line geometry for the lockups and wordmark.
 - Previous icon (v1 ledger-line P) archived at `docs/brand/archive/v1-ledger-line/`.
-- Brand page: `docs/index.html`, published as the public repo `samuelfalade/pryvo-brand`
-  (GitHub Pages from its root, https://samuelfalade.github.io/pryvo-brand/) because this repo is
-  private. To republish, copy `docs/index.html`, `docs/brand/png`, `docs/brand/svg` and this
-  brief into that repo. Linked from samuelfalade.github.io as a project card.
+- Website: `docs/site/` holds three pages that share `site.css`: `index.html` (marketing home),
+  `product.html` (product tour, section per feature, requirements, FAQ) and `brand.html` (these
+  guidelines). `docs/site/brand` is a symlink to `docs/brand` so the pages preview locally. Published
+  as the public repo `samuelfalade/pryvo-brand` (GitHub Pages from its root,
+  https://samuelfalade.github.io/pryvo-brand/, brand page at `/brand.html`) because this repo is
+  private. `docs/site/publish.sh "message"` rsyncs the site, this brief and `docs/brand/{png,svg}`
+  into a clone (default `~/.cache/pryvo-brand`, reused and pulled on later runs) and pushes. Linked from samuelfalade.github.io as a project card. On the web, where SF
+  Pro is unavailable, the site sets headlines in Fraunces, text in IBM Plex Sans and figures in IBM
+  Plex Mono, self-hosted as Latin woff2 subsets under `docs/site/fonts/` (Fraunces instanced to weight
+  400, keeping its optical-size axis); the wordmark itself is always the rendered PNG.
 - Icon concepts under evaluation: `docs/brand/concepts/` (generator `build-concepts.py`,
   SVG sources in `svg/`, PNG sheet `png/developed-sheet.png`). Five candidates: Coin, Tag,
   Receipt, Ledger, Angular, each in light/dark/tinted. Receipt was chosen on 2026-10-21; the

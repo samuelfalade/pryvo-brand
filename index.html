@@ -3,93 +3,191 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pryvo Brand</title>
-<meta name="description" content="Pryvo brand guidelines: the receipt mark, wordmark, lockup, palette and type for the small business toolkit.">
+<meta name="theme-color" content="#F6F1E7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#101512" media="(prefers-color-scheme: dark)">
+<title>Pryvo — The small business toolkit</title>
+<meta name="description" content="Pryvo works out the true cost of every job before you quote it, then invoices, keeps the books and exports for your accountant. Pricing, invoices and bookkeeping for solo service businesses, on iPhone.">
+<meta property="og:title" content="Pryvo — The small business toolkit">
+<meta property="og:description" content="Know what to charge. Pricing, invoices and bookkeeping for solo service businesses, on iPhone.">
+<meta property="og:image" content="https://samuelfalade.github.io/pryvo-brand/brand/png/lockup-horizontal.png">
 <link rel="icon" href="brand/svg/icon-light.svg">
-<style>
-  :root { --bg:#F6F1E7; --fg:#172019; --muted:#5E6B62; --ink:#0E5A3A; --accent:#E8A33D; --card:#FFFDF8; --line:#E3DCCB; --night:#101512; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#101512; --fg:#EDE8DC; --muted:#A3AB9F; --ink:#8FD3B0; --card:#181F1A; --line:#2A332C; } }
-  * { box-sizing: border-box; }
-  body { margin:0; background:var(--bg); color:var(--fg); font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif; line-height:1.55; }
-  .wrap { max-width:900px; margin:0 auto; padding:48px 16px 72px; }
-  h1,h2,h3 { font-family:-apple-system,"SF Pro Rounded","SF Pro Display",sans-serif; letter-spacing:-0.01em; margin:0 0 8px; }
-  h1 { font-size:clamp(28px,5vw,40px); color:var(--ink); }
-  h2 { font-size:24px; margin-top:48px; }
-  h3 { font-size:17px; margin-top:24px; }
-  p { max-width:62ch; margin:8px 0; }
-  .muted { color:var(--muted); }
-  .hero img { width:100%; max-width:760px; display:block; border-radius:14px; }
-  .pair { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
-  .pair img { width:100%; display:block; border-radius:14px; border:1px solid var(--line); }
-  .icons { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
-  .icons figure { margin:0; text-align:center; }
-  .icons img { width:100%; max-width:220px; border-radius:22.37%; display:block; margin:0 auto; }
-  .icons .dark { background:var(--night); } .icons .tint { background:#1C1C1E; }
-  figcaption { font-size:13px; color:var(--muted); margin-top:6px; }
-  .swatches { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; }
-  .swatch { border-radius:12px; padding:14px; border:1px solid var(--line); }
-  .swatch b { display:block; } .swatch code { font-size:13px; }
-  ul { padding-left:20px; } li { margin:4px 0; }
-  a { color:var(--ink); }
-  .dl a { display:inline-block; margin:4px 10px 4px 0; }
-  @media (max-width:560px) { .pair, .icons { grid-template-columns:1fr; } }
-</style>
+<link rel="preload" href="fonts/Fraunces-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/IBMPlexSans-variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="site.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-<div class="wrap">
-  <header class="hero">
-    <img src="brand/png/lockup-horizontal.png" alt="Pryvo lockup: receipt mark, wordmark and the tagline bar">
-    <h1>Pryvo</h1>
-    <p class="muted">The small business toolkit. Pricing, invoices and bookkeeping for solo service businesses, on iOS.</p>
-  </header>
-
-  <h2>Mark</h2>
-  <p>A green receipt card on warm off-white, torn along the bottom, with the P reversed out and a single amber total line under it. The line is the tagline, cut out of the bar in the card colour: a bar at icon size, readable up close.</p>
-  <div class="icons">
-    <figure><img src="brand/svg/icon-light.svg" alt="Icon, light"><figcaption>Light</figcaption></figure>
-    <figure><img class="dark" src="brand/svg/icon-dark.svg" alt="Icon, dark"><figcaption>Dark</figcaption></figure>
-    <figure><img class="tint" src="brand/svg/icon-tinted.svg" alt="Icon, tinted"><figcaption>Tinted</figcaption></figure>
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Pryvo home">
+      <picture><source srcset="img/mark-dark-nav.png" media="(prefers-color-scheme: dark)"><img class="mark" src="img/mark-nav.png" width="24" height="32" alt=""></picture>
+      <span class="wm" role="img" aria-label="pryvo"></span>
+    </a>
+    <nav aria-label="Site"><ul>
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="product.html">Product</a></li>
+      <li class="hide-s"><a href="brand.html">Brand</a></li>
+      <li><a class="btn" href="#get">Get Pryvo</a></li>
+    </ul></nav>
   </div>
+</header>
 
-  <h2>Lockup</h2>
-  <p>Wordmark in SF Pro Rounded Semibold, lowercase, tracked tight. The tagline is the icon's bar scaled under "ryvo", with the words cut out so the page shows through. Beneath the p's tail sits a foot block whose cradle is the tail's own end mirrored.</p>
-  <div class="pair">
-    <img src="brand/png/lockup-dark.png" alt="Lockup on night">
-    <img src="brand/png/brand-sheet.png" alt="Icon at App Store and home-screen sizes, light, dark and tinted">
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div class="copy">
+      <span class="pill reveal" style="--i:0">iPhone · Coming to the App Store</span>
+      <h1 class="reveal" style="--i:1">Know what <em>to charge.</em></h1>
+      <p class="lede reveal" style="--i:2">Pryvo works out the true cost of every job, from your yearly overhead and salary down to the mileage, before the quote goes out. Then it sends the invoice, keeps the books and exports for your accountant.</p>
+      <div class="cta reveal" style="--i:3">
+        <a class="btn" href="product.html">See the product</a>
+        <a class="btn ghost" href="#how">How it works</a>
+      </div>
+      <p class="fine reveal" style="--i:4">For planners, photographers, caterers, decorators and trades who quote by the job. Everything works without a subscription.</p>
+    </div>
+    <div class="art reveal" style="--i:2">
+      <div class="receipt-wrap">
+        <div class="receipt" aria-label="Example pricing floor for one job">
+          <div class="head"><span>Pricing floor</span><span>Job 0412</span></div>
+          <div class="title">Wedding, 120 guests</div>
+          <div class="row"><span class="k">Business overhead, per job</span><span class="dots"></span><span class="v">$653</span></div>
+          <div class="sub">$26,125 a year across 40 jobs</div>
+          <div class="row"><span class="k">Salary target, per job</span><span class="dots"></span><span class="v">$1,200</span></div>
+          <div class="sub">$48,000 a year across 40 jobs</div>
+          <div class="row"><span class="k">Materials</span><span class="dots"></span><span class="v">$180</span></div>
+          <div class="row"><span class="k">Travel, 64 mi</span><span class="dots"></span><span class="v">$45</span></div>
+          <div class="row"><span class="k">Assistant, 6 h</span><span class="dots"></span><span class="v">$150</span></div>
+          <div class="rule"></div>
+          <div class="total"><span>Minimum per job</span><span class="v">$2,228</span></div>
+          <p class="note">Quote above this line. Product markups add profit on top.</p>
+        </div>
+      </div>
+    </div>
   </div>
-  <h3>Rules</h3>
-  <ul>
-    <li>Clear space of one mark-height on every side.</li>
-    <li>Minimum size: icon 24 px, wordmark 100 px wide.</li>
-    <li>Never stretch, outline, add a drop shadow, or set the mark on a photo.</li>
-    <li>The bar always carries the tagline: amber in light and dark, grey in tinted mode. Nothing else goes on the card.</li>
-  </ul>
+</section>
 
-  <h2>Palette</h2>
-  <div class="swatches">
-    <div class="swatch" style="background:#0E5A3A;color:#F6F1E7"><b>Ink</b><code>#0E5A3A</code></div>
-    <div class="swatch" style="background:#F6F1E7;color:#172019"><b>Paper</b><code>#F6F1E7</code></div>
-    <div class="swatch" style="background:#E8A33D;color:#1A1206"><b>Accent</b><code>#E8A33D</code></div>
-    <div class="swatch" style="background:#101512;color:#EDE8DC"><b>Night</b><code>#101512</code></div>
-    <div class="swatch" style="background:#B3402F;color:#F6F1E7"><b>Negative</b><code>#B3402F</code></div>
+<section class="strip">
+  <div class="wrap">
+    <h2>Invoice apps start at the invoice. Pryvo starts at what you need to earn.</h2>
+    <div class="stat reveal"><b>1</b><span>number to remember: the minimum you can charge per job and still cover rent, insurance, software and your own salary.</span></div>
+    <div class="stat reveal"><b>0</b><span>features behind a paywall. Pro exists to support development. Nothing you use is taken away.</span></div>
+    <div class="stat reveal"><b>100%</b><span>of your data on your device, in an open JSON backup you can take anywhere. The AI assistant can run on-device too.</span></div>
   </div>
-  <p class="muted">Ink on paper is about 7.3:1, passing AA for text and AAA for large text. Amber is the one accent on the mark; the negative red is for the app only.</p>
+</section>
 
-  <h2>Type</h2>
-  <p>Wordmark: SF Pro Rounded Semibold. Tagline on the mark: SF Pro Rounded Black capitals, tracked tight. In the app: SF Pro at Dynamic Type sizes, tabular figures wherever a number appears.</p>
+<section id="toolkit">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">The toolkit</span>
+      <h2>Three jobs, one app, <em>one set of numbers.</em></h2>
+      <p class="lede">Price, invoice and keep the books from the same records, so the margin you see on the quote is the margin you see at tax time.</p>
+    </div>
+    <div class="pillars">
+      <article class="card reveal">
+        <span class="idx">01 — Price</span>
+        <h3>A floor under every quote</h3>
+        <p>Enter your yearly business costs and salary target once. Pryvo spreads them across the jobs you plan to do, adds each job type's own costs and shows the least you can charge. Set a profit margin and it warns you when a quote falls below it.</p>
+        <div class="fig pills"><span>Business <b>$26,125</b></span><span>Salary <b>$48,000</b></span><span>Per job <b>$375</b></span><span class="floor">Floor <b>$2,228</b></span></div>
+      </article>
+      <article class="card reveal">
+        <span class="idx">02 — Invoice</span>
+        <h3>Quote, invoice, get paid</h3>
+        <p>Turn a priced project into a quote with an expiry date, then into an invoice with line items, tax and payments received. Send it as a PDF from the app, log payments against it and watch the balance due fall to zero.</p>
+        <div class="fig invoice">
+          <div class="r"><span>Service fee</span><span>$2,600.00</span></div>
+          <div class="r"><span>Floral package ×1</span><span>$940.00</span></div>
+          <div class="r"><span>Tax 8.25%</span><span>$292.05</span></div>
+          <div class="r"><span>Paid 12 Oct</span><span>−$2,000.00</span></div>
+          <div class="r t"><span>Balance due</span><span>$1,832.05</span></div>
+        </div>
+      </article>
+      <article class="card reveal">
+        <span class="idx">03 — Keep the books</span>
+        <h3>A ledger your accountant will like</h3>
+        <p>Every payment and expense lands in one transaction ledger. Import a CSV from your bank or card and Pryvo matches the lines to what you recorded. Export the year as CSV or PDF, with a tax summary, in two taps.</p>
+        <table class="fig ledger">
+          <tr><td>Deposit, J. Okafor<span class="tag">matched</span></td><td>$1,300.00</td></tr>
+          <tr><td>Rental Co. invoice 2231<span class="tag">matched</span></td><td class="brick">−$420.00</td></tr>
+          <tr><td>Card payment, fuel<span class="tag amber">review</span></td><td class="brick">−$62.40</td></tr>
+        </table>
+      </article>
+    </div>
+  </div>
+</section>
 
-  <h2>Downloads</h2>
-  <p class="dl">
-    <a href="brand/svg/icon-light.svg">Icon light (SVG)</a>
-    <a href="brand/svg/icon-dark.svg">Icon dark (SVG)</a>
-    <a href="brand/svg/icon-tinted.svg">Icon tinted (SVG)</a>
-    <a href="brand/svg/mark.svg">Mark (SVG)</a>
-    <a href="brand/png/lockup-horizontal.png">Lockup light (PNG)</a>
-    <a href="brand/png/lockup-dark.png">Lockup dark (PNG)</a>
-    <a href="brand/png/wordmark-transparent.png">Wordmark (PNG)</a>
-    <a href="brand-brief.md">Brand brief (Markdown source)</a>
-  </p>
-  <p class="muted">The icon and lockups are generated by <code>brand/build-icon.py</code> from one set of constants. The brief is the source for the rules on this page.</p>
-</div>
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">How it works</span>
+      <h2>Set it up in an evening. <em>Quote with it for years.</em></h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><h3>Enter your costs</h3><p>Yearly business expenses and the salary you need to take home. Mileage rate, tax rate and currency live in settings.</p></div>
+      <div class="step reveal"><h3>Describe your job types</h3><p>A project template per kind of work, each with its own costs and products. Pryvo turns them into a price floor per job.</p></div>
+      <div class="step reveal"><h3>Quote with the floor in view</h3><p>Create a project for a client, see its cost and margin as you price it, and send the quote. Expiring quotes and overdue payments raise a notification.</p></div>
+      <div class="step reveal"><h3>Invoice and reconcile</h3><p>Convert the quote, log payments, import your statement and export the year for your accountant.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="private">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Private by design</span>
+      <h2>Your books stay <em>yours.</em></h2>
+      <p class="lede">Client names and bank lines are sensitive. Pryvo is built so they do not have to leave the phone.</p>
+    </div>
+    <div class="facts">
+      <div class="fact reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><div><b>Face ID lock and a privacy cover</b><span>Lock the app behind Face ID, Touch ID or a PIN. The screen is covered the moment you switch apps.</span></div></div>
+      <div class="fact reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg><div><b>AI that runs on the device</b><span>Ask about your numbers using Apple Intelligence on-device. Cloud and bring-your-own-key options exist, and the app says plainly what each one sends.</span></div></div>
+      <div class="fact reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 13h6M9 17h6"/></svg><div><b>An open backup file</b><span>Back up to iCloud Drive, Google Drive, Dropbox or the device as plain JSON. It is readable by other software and not locked to Pryvo.</span></div></div>
+      <div class="fact reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 18a4 4 0 0 1-.5-8 6 6 0 0 1 11.3-1.5A4 4 0 0 1 17 18z"/></svg><div><b>iCloud sync, no account required</b><span>Your records sync between your own devices through iCloud. There is no Pryvo account to create and no server of ours holding your data.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="get">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Price</span>
+      <h2>Free to use. <em>Pro keeps it going.</em></h2>
+      <p class="lede">Every feature on this page works without paying. Pro is for people who want the app to keep being developed.</p>
+    </div>
+    <div class="plans">
+      <div class="plan reveal">
+        <span class="eyebrow">Pryvo</span>
+        <div class="price">Free</div>
+        <p class="muted">The whole toolkit, on your iPhone.</p>
+        <ul><li>Pricing floor, quotes and invoices</li><li>Clients, calendar, products and packages</li><li>Expense tracking, mileage and assets</li><li>Ledger, bank reconciliation, CSV and PDF export</li><li>Face ID lock, open backup, iCloud sync</li></ul>
+      </div>
+      <div class="plan pro reveal">
+        <span class="eyebrow">Pryvo Pro</span>
+        <div class="price">Monthly, yearly or once</div>
+        <p class="muted">Three ways to support development. Prices are set in the App Store at launch.</p>
+        <ul><li>Nothing you use today is taken away</li><li>Cancel any time in your Apple ID settings</li><li>Lifetime option with no renewal</li></ul>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn amber" href="mailto:samuelfalade@gmail.com?subject=Pryvo%20launch">Tell me when it launches</a>
+      <a class="btn ghost" href="product.html">Read the full product tour</a>
+    </div>
+    <p class="fine">Requires iOS 26 or later. Android is on the roadmap.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>Pryvo. The small business toolkit. © 2026 Samuel Falade.</div>
+    <nav aria-label="Footer">
+      <a href="product.html">Product</a>
+      <a href="brand.html">Brand</a>
+      <a href="brand-brief.md">Brand brief</a>
+      <a href="https://github.com/samuelfalade" rel="noopener">GitHub</a>
+      <a href="mailto:samuelfalade@gmail.com">Contact</a>
+    </nav>
+  </div>
+</footer>
+<script src="site.js"></script>
 </body>
 </html>
